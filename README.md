@@ -1,7 +1,9 @@
 # diatribe
+
 A p-2-p private websocket communication layer that allows for decentralized websocket communication
 
 ### More in-depth description
+
 Using NodeJS, Diatribe spins up a Server (also refrenced as a node) and takes a Port to run on, and a password.
 
 The password is a unique string of any length that is used to generate a hash/id for your server and will be recognized by the other nodes.
@@ -16,7 +18,7 @@ If the server has more than 5 outbound connections it will tell the 5th connecti
 
 ### Notes
 
-In its current state, the system stated above is not entirely finished and has no actual use of sending messages/events. The short term goal is to be able to send websocket messages from one client to all the nodes in the network. This could allow for something like a chat app with no central server or, a mesh network of servers that all have their own chat. 
+In its current state, the system stated above is not entirely finished and has no actual use of sending messages/events. The short term goal is to be able to send websocket messages from one client to all the nodes in the network. This could allow for something like a chat app with no central server or, a mesh network of servers that all have their own chat.
 
 ### Getting Started
 
@@ -24,3 +26,5 @@ In its current state, the system stated above is not entirely finished and has n
 2. run `npm i`
 3. run `node ./dist/index.js`
 
+compile the app with tsc (must have tsc install globally)
+then run `tsc --watch` (or without watch if you just want to do it once) to compile to the dist folder
