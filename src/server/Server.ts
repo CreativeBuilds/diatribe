@@ -190,6 +190,7 @@ export class Server {
     this.debug(`Outbound keys ${outboundKeys.length}`);
     if (outboundKeys.length >= 5) {
       this.outboundServers[outboundKeys[4]].newClient(ip);
+      // customClientSocket.
     }
     this.outboundServers[customClientSocket.nodeId] = customClientSocket;
     this.debug(`Connected to ${ip}`);
